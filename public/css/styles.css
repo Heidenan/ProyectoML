@@ -1,0 +1,49 @@
+.header-one {
+        background-color: #EAC926;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.titulares {
+    font-size: 24px;
+}
+
+.descydescrip {
+
+    font-size: 16px;
+}
+
+.precios {
+    font-size: 16px;
+}
+
+article {
+    font-size: 12px;
+}
+
+footer {
+
+    text-align: center;
+}
+
+.burguer-menu {
+    background-color: #03264C;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.iconosFooter {
+        color: #1259c3;;
+        font-size: 55px;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+ li {
+     list-style: none;
+ }

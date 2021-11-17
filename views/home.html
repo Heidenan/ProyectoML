@@ -1,20 +1,28 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
     <meta charset = "utf-8">
     <title>Mercado Liebre</title>
-    <img src = '/images\logo-mercado-liebre.svg' 
-    height="287"
-    width="400"/>
-  </head>
-  <body>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+            <link rel= "stylesheet" href= "/css/styles.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">       
+        </head>
+            <body>
 
-    <header>
-
+    <header class="header-one">
+            <picture>    <img src = '/images/logo-mercado-liebre.svg' 
+                height="287"
+                width="400"/>
+            </picture> 
         <p>Lugar para poner barra de busqueda</p>
 
-        <p>Comprá en cuotas y sin tarjeta de crédito</p>
+        <p> <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
     
         <ul>
             <li><a href="a">Ofertas</a></li>
@@ -23,19 +31,24 @@
             <li><a href="a">Ayuda</a></li>
         </ul>
         <ul>
-            <li><a href="a">Crea tu cuenta</a></li>
-            <li><a href="a">Ingresá</a></li>
-            <li><a href="a">Mis compras</a></li>
+            <li><a href="a">Crea tu cuenta</a><i class="far fa-address-card"></i></li> 
+            <li><a href="a">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="a">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
     
     
         </ul>
+        <nav class= "burguer-menu">
 
+           <a><i class="fas fa-bars"></i></a> 
+
+        </nav>
+       
     </header>
     <main>
 
         <section>  
             <header>
-                <h2>Basado en tu ultima visita</h2>
+                <h2 class = "titulares">Basado en tu ultima visita</h2>
             </header>
             <article>
                 <picture>
@@ -44,10 +57,10 @@
 
                 </picture>
                 <dl>
-                    <dt>$6770</dt>
+                    <dt class= "precios">$6770</dt>
                 
-                   <dt>40% off</dt> 
-                    <h3>Cafetera Moulinex</h3>
+                   <dt class= "descydescrip">40% off</dt> 
+                    <h3 class= "descydescrip">Cafetera Moulinex</h3>
                 </dl>
             </article>
             <article>
@@ -57,9 +70,9 @@
 
                 </picture>
                 <dl>
-                    <dt>$230.000</dt>
-                    <dt>20% off</dt> 
-                    <h3>MacBook Pro 2019</h3>
+                    <dt class= "precios">$230.000</dt>
+                    <dt class= "descydescrip">20% off</dt> 
+                    <h3 class= "descydescrip">MacBook Pro 2019</h3>
                 </dl>
             </article>
             <article>
@@ -69,9 +82,9 @@
 
                 </picture>
                 <dl>
-                   <dt> $70.500</dt>
-                   <dt>10% off</dt> 
-                    <h3>Samsung Galaxy S10</h3>
+                   <dt class= "precios"> $70.500</dt>
+                   <dt class= "descydescrip">10% off</dt> 
+                    <h3 class= "descydescrip">Samsung Galaxy S10</h3>
                 </dl>
             </article>
             <article>
@@ -81,9 +94,9 @@
 
                 </picture>
                 <dl>
-                    <dt> $23.200</dt>
-                    <dt>5% off</dt>
-                    <h3>SmartTv Samsung 43"</h3>
+                    <dt class= "precios"> $23.200</dt>
+                    <dt class= "descydescrip">5% off</dt>
+                    <h3 class= "descydescrip">SmartTv Samsung 43"</h3>
                 </dl>
             </article>
 
@@ -93,7 +106,7 @@
 
         <section>  
             <header>
-                <h2>Ofertas</h2>
+                <h2 class = "titulares">Ofertas</h2>
             </header>
             <article>
                 <picture>
@@ -102,10 +115,10 @@
 
                 </picture>
                 <dl>
-                    <dt>$6770</dt>
+                    <dt class= "precios">$6770</dt>
                 
-                   <dt>40% off</dt> 
-                    <h3>Cafetera Moulinex</h3>
+                   <dt class= "descydescrip">40% off</dt> 
+                    <h3 class= "descydescrip">Cafetera Moulinex</h3>
                 </dl>
             </article>
             <article>
@@ -115,9 +128,9 @@
 
                 </picture>
                 <dl>
-                    <dt>$230.000</dt>
-                    <dt>20% off</dt> 
-                    <h3>MacBook Pro 2019</h3>
+                    <dt class= "precios">$230.000</dt>
+                    <dt class= "descydescrip">20% off</dt> 
+                    <h3 class= "descydescrip">MacBook Pro 2019</h3>
                 </dl>
             </article>
             <article>
@@ -127,9 +140,9 @@
 
                 </picture>
                 <dl>
-                    <dt> $70.500</dt>
-                    <dt>10% off</dt> 
-                     <h3>Samsung Galaxy S10</h3>
+                    <dt class= "precios"> $70.500</dt>
+                    <dt class= "descydescrip">10% off</dt> 
+                     <h3 class= "descydescrip">Samsung Galaxy S10</h3>
                  </dl>
             </article>
             <article>
@@ -139,9 +152,9 @@
 
                 </picture>
                 <dl>
-                    <dt> $23.200</dt>
-                    <dt>5% off</dt>
-                    <h3>SmartTv Samsung 43"</h3>
+                    <dt class= "precios"> $23.200</dt>
+                    <dt class= "descydescrip">5% off</dt>
+                    <h3 class= "descydescrip">SmartTv Samsung 43"</h3>
                 </dl>
             </article>
 
@@ -153,6 +166,7 @@
     <footer>
         <section>
         <header>
+                <i class="fas fa-credit-card iconosFooter"></i>
             <h3>Pagá con tarjeta de credito o en efectivo</h3>
         </header>
         <article>
@@ -162,7 +176,8 @@
         </article>
     </section>
     <section>
-        <header>
+        <i class="fas fa-gift iconosFooter"></i>   
+        <header> 
             <h3>Envio gratis desde los $2500</h3>
         </header>
         <article>
@@ -172,6 +187,7 @@ productos. Es <br> un beneficio de Mercado Puntos.
         </article>
     </section>
     <section>
+        <i class="fas fa-user-shield iconosFooter"></i>
         <header>
             <h3>Seguridad de principio a fin</h3>
         </header>
