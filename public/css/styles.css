@@ -1,25 +1,41 @@
+* {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    
+}
+main section {
+    display: flex;
+    flex-wrap: wrap;
+}
+header picture {
+    width: 50%;
+    height: auto;
+}
 .header-one {
         background-color: #EAC926;
 }
 
-body {
+body { 
     font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    max-width: 100;
+    min-width: 100;
+
 }
 .titulares {
-    font-size: 24px;
+    font-size: 36px;
 }
 
-.descydescrip {
+.descripcion {
 
     font-size: 16px;
-}
+    display: flex;
+   }
 
 .precios {
     font-size: 16px;
-}
-
-article {
-    font-size: 12px;
+    flex-grow: 0.30;
 }
 
 footer {
@@ -47,3 +63,88 @@ a {
  li {
      list-style: none;
  }
+
+ main {
+     width: 90vw;
+     background-color: rgb(245, 242, 230);
+     display: block;
+ }
+
+ article dt {
+     box-sizing: border-box;
+     padding: 10px;
+     }
+    
+
+ .iconodelivery {
+
+    color: rgb(50, 192, 50);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: 20px;
+    top: -15px;
+ }
+
+ 
+    
+ .descuentos{
+     color:rgb(50, 192, 50);
+     font-size: 16px;
+     flex-grow: 0.70;
+ }
+
+ main header {
+     text-align: center;
+     box-sizing: border-box;
+     height: 60px;
+ }
+
+img {
+    box-sizing: border-box;
+    }
+
+h3  {
+    display: none;
+    
+}
+ul {
+    display: none;
+}
+
+
+  @media (min-width: 361px){
+    h3 { 
+        display: block; 
+    } 
+    body {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);}  
+    
+    ul {
+        display: block;
+    }
+    .burguer-menu{
+        display: none;
+        }
+}
+
+  @media (min-width: 769px) {
+    h3 { 
+        display: block; 
+    } 
+    body {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    ul {
+        display: block;
+    }
+    .burguer-menu{
+        display: none;
+        }
+}
