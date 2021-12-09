@@ -24,12 +24,12 @@
     flex-wrap: nowrap;
     justify-content: center;
 }
-.lupa {
-    position: absolute;
-}
+
 
 picture {
-    width: 50%
+    width: 100%;
+    display: flex;
+    
 }
 .copy-header{
     display: flex;
@@ -60,6 +60,7 @@ p{
     display: flex;
     width: 16px;
     position: absolute;
+    padding-right: 25px;
     
 }
 
@@ -68,6 +69,11 @@ p{
     margin-right: 5px;
 }
 
+input {
+    width: 100%;
+    height: 2rem;
+    border-radius: 10px;
+}
 
 ul a {
     list-style: none;
@@ -134,7 +140,7 @@ article {
 
 .contenedorPadre {
     
-    display: flex;
+    display: block;
     justify-content: space-around;
 }
 .contenedorHijo{
@@ -142,6 +148,9 @@ article {
     flex-direction: row;
     text-align: left;
    
+}
+.seccionFlex {
+    display: block;
 }
 section article div {
     position: relative;
@@ -152,7 +161,8 @@ section article div {
 .titulares {
     text-align: left;
     margin:20px;
-    font-size: 3vh;
+    font-size: 1.5em;
+    color: grey;
 }  
 
 .descripcion {
@@ -162,7 +172,7 @@ section article div {
 }
 
 h3  {
-    display: none;
+    display: block;
     
 }
 article dt {
@@ -203,15 +213,17 @@ main header {
     box-sizing: border-box;
     height: 60px;
 }
-.articulo1{
+
+.articulo{
+    display: block;
     margin-bottom: 10px;
-    transition: box-shadow 2s;
-
+    transition: box-shadow 2s
 }
 
-.articulo2, .articulo3, .articulo4, .articulo5, .articulo6, .articulo7, .articulo8 {
-    display: none
+.ofertas {
+    display: block;
 }
+
 
 
 /* ----- Footer -----*/
@@ -230,10 +242,6 @@ footer {
 .iconosFooter {
     color: #1259c3;;
     font-size: 55px;
-}
-
-.ofertas {
-    display: none;
 }
 
 
@@ -262,6 +270,7 @@ footer {
         }   
         input {
             display: flex;
+
         }
         
         .logo {
@@ -302,16 +311,17 @@ footer {
         .descripcion{
             display: flex;
         }
-        .articulo2, .articulo5, .articulo6{
-            display: block;
-            margin-bottom: 10px;
-            transition: box-shadow 1s
-    }
+        .contenedorPadre {
+    
+            display: flex;
+            justify-content: space-around;
+        }
+        }
+
+        
     main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);   
     }
-   
-}
 
     
     @media (min-width: 1200px) {
@@ -370,19 +380,21 @@ footer {
         .burguer-menu{
             display: none;
         }
+        /* ----- Main -----*/
 
+        .contenedorPadre{
+            display: flex;
+        }
         .descripcion {
             display: flex;
         }
-        .articulo2, .articulo3, .articulo4, .articulo5, .articulo6, .articulo7, .articulo8{
-            display: block;
-            margin-bottom: 10px;
-            transition: box-shadow 1s
-        }
+      
         .contenedorHijo{
             text-align: center;
         }
-
+        .seccionFlex {
+            display: flex;
+        }
         main section article {
             box-shadow: 0px 0px 10px rgb(100, 100, 100);        
         }

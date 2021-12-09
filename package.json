@@ -1,16 +1,27 @@
 {
-  "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.15"
-  },
-  "name": "proyecto_en_playground",
+  "name": "proyectoml",
   "version": "1.0.0",
-  "main": "src/app.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "test": "nodemon src/app.js -e js,mjs,json,html,css"
+    "test": "nodemon src/app.js -e mjs,js,html,json,css",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heidenan/ProyectoML.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/Heidenan/ProyectoML/issues"
+  },
+  "homepage": "https://github.com/Heidenan/ProyectoML#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
