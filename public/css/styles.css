@@ -24,6 +24,13 @@
     flex-wrap: nowrap;
     justify-content: center;
 }
+.lupa {
+    position: absolute;
+}
+
+picture {
+    width: 50%
+}
 .copy-header{
     display: flex;
     justify-content: center;
@@ -44,7 +51,15 @@ p{
 .headerGrow{
     display: flex;
     width: 50%;
-    justify-content: center;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+    
+}
+.icon{
+    display: flex;
+    width: 16px;
+    position: absolute;
     
 }
 
@@ -243,16 +258,14 @@ footer {
 
         .headerGrow{
             align-items: center;
+            width: 60%
         }   
-
-        .headerGrow input{
-            width: 200%;
-            height: 50px;
-            align-items: center;
-
+        input {
+            display: flex;
         }
+        
         .logo {
-            width: 300px;
+            width: 100%;
             margin-right: 5px;
         }
         .navbar1 {
