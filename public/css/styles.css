@@ -1,84 +1,146 @@
 * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     
 }
-main section {
-    display: flex;
-    flex-wrap: wrap;
-}
-header picture {
-    width: 50%;
-    height: auto;
-}
+
+/* ----- Header -----*/
+
+
+
 .header-one {
-        background-color: #EAC926;
+    background-color: #EAC926;
+    text-align: center;
+    padding: 20px;
 }
-
-body { 
-    font-family: 'Roboto', sans-serif;
-    width: 100vw;
-    max-width: 100;
-    min-width: 100;
-
-}
-.titulares {
-    font-size: 36px;
-}
-
-.descripcion {
-
-    font-size: 16px;
+.header-two {
     display: flex;
-   }
-
-.precios {
-    font-size: 16px;
-    flex-grow: 0.30;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+h2 {
+    display: block;
+}
+p{
+    margin-bottom: 20px;
+    color: black;
+}
+.headerGrow{
+    display: flex;
+    flex-grow: 0.5;
+    justify-content: center;
+    
+}
+.logo {
+    width: 200px;
+    margin-right: 5px;
 }
 
-footer {
 
-    text-align: center;
-}
-
-.burguer-menu {
-    background-color: #03264C;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-}
-
-.iconosFooter {
-        color: #1259c3;;
-        font-size: 55px;
-}
-
-a {
+ul a {
     list-style: none;
     text-decoration: none;
     color: black;
 }
- li {
-     list-style: none;
- }
 
- main {
-     width: 90vw;
-     background-color: rgb(245, 242, 230);
-     display: block;
- }
+.burguer-menu {
+    background-color: #246ab4;
+    color: white;
+    display: block;
+    max-width: 35px;
+    border-radius: 4px;
+    margin: auto;
+    padding: 5px;
+}
 
- article dt {
-     box-sizing: border-box;
-     padding: 10px;
-     }
+li {
+    list-style: none;
+}
+
+ul {
+    display: none;
+}
+
+/* ----- Body -----*/
+
+body { 
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(245, 242, 230);
+
     
+}
 
- .iconodelivery {
+/* ----- Main -----*/
 
-    color: rgb(50, 192, 50);
+main {
+    text-align: center;
+    width: 90%;
+    background-color: rgb(245, 242, 230);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    }
+
+main section article {
+    width: 100%;
+    margin: 10px;
+    background-color: white;
+  }
+article {
+    width: 100%;
+    margin: 10px;
+}
+
+.banner{
+    width: 100%;
+}
+
+.contenedorPadre {
+    
+    display: flex;
+    justify-content: space-around;
+}
+.contenedorHijo{
+    display: flex;
+    flex-direction: row;
+   
+}
+section article div {
+    position: relative;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.titulares {
+    text-align: center;
+    margin:20px;
+    font-size: 4vw;
+}
+
+.descripcion {
+    
+    font-size: 16px;
+    display: none;
+}
+
+h3  {
+    display: none;
+    
+}
+article dt {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.camion {
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -87,64 +149,176 @@ a {
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     right: 20px;
     top: -15px;
- }
-
+    color:#39b54a
+}
  
+
+.descuentos{
+    color:rgb(50, 192, 50);
+    font-size: 16px;
+    display: block;
+    flex-grow: 0.70;
     
- .descuentos{
-     color:rgb(50, 192, 50);
-     font-size: 16px;
-     flex-grow: 0.70;
- }
+}
+.precios {
+    font-size: 16px;
+    display: block;
+    flex-grow: 0.30;
+}
 
- main header {
-     text-align: center;
-     box-sizing: border-box;
-     height: 60px;
- }
-
-img {
+main header {
+    text-align: center;
     box-sizing: border-box;
-    }
-
-h3  {
-    display: none;
-    
+    height: 60px;
 }
-ul {
-    display: none;
+.articulo1{
+    margin-bottom: 10px;
+    transition: box-shadow 2s;
+
 }
 
+.articulo2, .articulo3, .articulo4, .articulo5, .articulo6, .articulo7, .articulo8 {
+    display: none
+}
 
-  @media (min-width: 361px){
-    h3 { 
-        display: block; 
-    } 
-    body {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);}  
+
+/* ----- Footer -----*/
+footer {
     
-    ul {
-        display: block;
-    }
-    .burguer-menu{
-        display: none;
+    text-align: center;
+}
+
+.copyright{
+    margin-top:20px;
+    margin-bottom:10px
+}
+
+
+
+.iconosFooter {
+    color: #1259c3;;
+    font-size: 55px;
+}
+
+.ofertas {
+    display: none;
+}
+
+
+        
+    @media (min-width: 769px) {
+        h3 { 
+            display: block; 
+        } 
+        
+        /* ----- Header -----*/
+        .header-two{
+            display: flex;
+            justify-content:space-between
         }
-}
+        .headerGrow input{
+            width: 200%;
+            height: 50px;
+        }
+        .logo {
+            width: 300px;
+            margin-right: 5px;
+        }
+        .navbar1 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar1 li {
+            margin: 0px 10px;
+        }
+        .copy-header { 
+            color: black;
+            text-align: right;
+            max-width: 250px;
+            font-weight: 4;
+        }
+        ul {
+            display: flex;
+        }
+        
+        .burguer-menu{
+            display: none;
+        }
 
-  @media (min-width: 769px) {
-    h3 { 
-        display: block; 
-    } 
-    body {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        /* ----- Main -----*/
+
+        .descripcion{
+            display: flex;
+        }
+        .articulo2{
+            display: block;
+            margin-bottom: 10px;
+            transition: box-shadow 1s
     }
-    ul {
-        display: block;
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);   
     }
-    .burguer-menu{
-        display: none;
+   
+      }
+   
+    
+    @media (min-width: 1200px) {
+        
+        h3 { 
+            display: block; 
+        } 
+       .header-two{
+            display: flex;
+            justify-content:space-between;
+            margin: auto;
+            }
+        .headerGrow input{
+                width: 200%;
+                height: 50px;
+        }
+        .logo {
+            width: 400px;
+            margin-right: 5px;
+        }
+        
+        .navbar1 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar1 li {
+            margin: 0px 10px;
+        }
+        .copy-header { 
+            color: black;
+            text-align: right;
+            max-width: 250px;
+            font-weight: 4;
+        }
+        ul {
+            display: flex;
+        }
+        
+        .burguer-menu{
+            display: none;
+        }
+        .descripcion {
+            display: flex;
+        }
+        .articulo2, .articulo3, .articulo4{
+            display: block;
+            margin-bottom: 10px;
+            transition: box-shadow 1s
+        
+        }
+        main section article {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);        
+        }
+        footer div{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
 }
