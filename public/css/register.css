@@ -110,140 +110,6 @@ body {
     
 }
 
-/* ----- Main -----*/
-
-main {
-    text-align: center;
-    width: 90%;
-    background-color: #ebebeb;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    }
-
-main section article {
-    width: 100%;
-    margin: 10px;
-    background-color: white;
-  }
-article {
-    width: 100%;
-    margin: 10px;
-}
-
-.banner{
-    width: 100%;
-}
-
-.contenedorPadre {
-    
-    display: block;
-    justify-content: space-around;
-}
-.contenedorHijo{
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-   
-}
-.seccionFlex {
-    display: block;
-}
-section article div {
-    position: relative;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-}
-
-.titulares {
-    text-align: left;
-    margin:20px;
-    font-size: 1.5em;
-    color: grey;
-}  
-
-.descripcion {
-    
-    font-size: 16px;
-    display: none;
-    opacity: 0;
-    transition: 1.5s;
-    
-}
-
-.descripcion:hover {
-    opacity: 1;
-}
-
-h3  {
-    display: block;
-    
-}
-article dt {
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-.camion {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-    color:#39b54a;
-    transition: transform 3s
-}
-
-.camion:hover{
-transform: rotateZ(-90deg)
-
-} 
-
-.descuentos{
-    color:rgb(50, 192, 50);
-    font-size: 16px;
-    display: block;
-    width: 70%;
-}
-.precios {
-    font-size: 16px;
-    display: block;
-    width: 30%;
-}
-
-main header {
-    text-align: center;
-    box-sizing: border-box;
-    height: 60px;
-}
-
-.articulo{
-    display: block;
-    margin-bottom: 10px;
-    box-shadow: none;
-    transition: box-shadow 0.5s;
-}
-.articulo:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-
-
-.ofertas {
-    display: block;
-}
-
-
 
 /* ----- Footer -----*/
 footer {
@@ -255,7 +121,6 @@ footer {
     margin-top:20px;
     margin-bottom:10px
 }
-
 
 
 .iconosFooter {
@@ -329,18 +194,6 @@ footer {
             display: none;
         }
 
-        /* ----- Main -----*/
-
-        .descripcion{
-            display: flex;
-        }
-        .contenedorPadre {
-    
-            display: flex;
-            justify-content: space-around;
-        }
-        }
-
         
     
     @media (min-width: 1200px) {
@@ -399,24 +252,7 @@ footer {
         .burguer-menu{
             display: none;
         }
-        /* ----- Main -----*/
-
-        .contenedorPadre{
-            display: flex;
-        }
-        .descripcion {
-            display: flex;
-        }
-      
-        .contenedorHijo{
-            text-align: center;
-        }
-        .seccionFlex {
-            display: flex;
-        }
-        main section article {
-            box-shadow: 0px 0px 10px rgb(100, 100, 100);        
-        }
+        
         footer div{
             display:flex;
             flex-direction: row;
@@ -432,4 +268,5 @@ footer {
             text-align: left;
             margin-top: 30px;
         }
+}
 }

@@ -7,7 +7,7 @@
     <title>Mercado Liebre</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     rel="stylesheet" />
-    <link rel= "stylesheet" href= "./css/styles.css">
+    <link rel= "stylesheet" href= "./css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,24 +54,29 @@
         
     </header>
         <body> 
+            <main>
+            <section>
             <form action='/' method="post">
                
                 <fieldset>
-                    <label>Nombre de Usuari@</label>
+                    <label>Nombre de Usuario</label>
                     <input type="text" name='nombreApellido'>
                 </fieldset>
                 <fieldset>
                     <label> Contraseña</label>
                     <input type="password" name='password'>
                 </fieldset>
-                <button type="submit">
+                <button class="enviar" type="submit" >
                         Enviar
                 </button>
             </form>
-                
+        </section>    
+        <section> 
         <form action="http://localhost:3000/">
-            <input type="submit" value="Ir a inicio" />
+            <input style= "width:15rem" type="submit" value="Ir a inicio" />
     </form>
+</section>
+</main>
     <footer>
         <div>
         <section>
