@@ -12,15 +12,28 @@
 .header-one {
     background-color: #EAC926;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 .header-two {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     margin-bottom: 20px;
 }
+.cajasectionheader{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.copy-header{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 1rem;
+}
+.navbar1{
+    display: none
+}
+
 h2 {
     display: block;
 }
@@ -30,12 +43,13 @@ p{
 }
 .headerGrow{
     display: flex;
-    flex-grow: 0.5;
+    width: 50%;
     justify-content: center;
     
 }
+
 .logo {
-    width: 200px;
+    width: 50%;
     margin-right: 5px;
 }
 
@@ -111,6 +125,7 @@ article {
 .contenedorHijo{
     display: flex;
     flex-direction: row;
+    text-align: left;
    
 }
 section article div {
@@ -120,10 +135,10 @@ section article div {
 }
 
 .titulares {
-    text-align: center;
+    text-align: left;
     margin:20px;
-    font-size: 4vw;
-}
+    font-size: 3vh;
+}  
 
 .descripcion {
     
@@ -160,13 +175,12 @@ article dt {
     color:rgb(50, 192, 50);
     font-size: 16px;
     display: block;
-    flex-grow: 0.70;
-    
+    width: 70%;
 }
 .precios {
     font-size: 16px;
     display: block;
-    flex-grow: 0.30;
+    width: 30%;
 }
 
 main header {
@@ -215,13 +229,27 @@ footer {
         } 
         
         /* ----- Header -----*/
+
+        .h2{
+            display: flex;
+            align-items: center;
+        }
         .header-two{
             display: flex;
+            flex-direction: row;
             justify-content:space-between
+            
         }
+
+        .headerGrow{
+            align-items: center;
+        }   
+
         .headerGrow input{
             width: 200%;
             height: 50px;
+            align-items: center;
+
         }
         .logo {
             width: 300px;
@@ -234,11 +262,19 @@ footer {
         .navbar1 li {
             margin: 0px 10px;
         }
-        .copy-header { 
-            color: black;
-            text-align: right;
-            max-width: 250px;
-            font-weight: 4;
+        .cajasectionheader{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            width: 65%;
+        }
+        .copy-header{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            width: 35%;
+            font-size: 1rem;
+            margin-top: 10px;
         }
         ul {
             display: flex;
@@ -253,7 +289,7 @@ footer {
         .descripcion{
             display: flex;
         }
-        .articulo2{
+        .articulo2, .articulo5, .articulo6{
             display: block;
             margin-bottom: 10px;
             transition: box-shadow 1s
@@ -262,28 +298,39 @@ footer {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);   
     }
    
-      }
-   
+}
+
     
     @media (min-width: 1200px) {
         
         h3 { 
             display: block; 
         } 
-       .header-two{
+        
+        /* ----- Header -----*/
+
+        .h2{
             display: flex;
-            justify-content:space-between;
-            margin: auto;
-            }
+            align-items: center;
+        }
+        .header-two{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between
+            
+        }
+        .headerGrow{
+            align-items: center;
+        }
         .headerGrow input{
-                width: 200%;
-                height: 50px;
+            width: 200%;
+            height: 50px;
+            align-items: center;
         }
         .logo {
-            width: 400px;
+            width: 300px;
             margin-right: 5px;
         }
-        
         .navbar1 {
             display: flex;
             justify-content: space-between;
@@ -291,11 +338,17 @@ footer {
         .navbar1 li {
             margin: 0px 10px;
         }
-        .copy-header { 
-            color: black;
-            text-align: right;
-            max-width: 250px;
-            font-weight: 4;
+        .cajasectionheader{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            width: 65%;
+        }
+        .copy-header{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            width: 35%;
         }
         ul {
             display: flex;
@@ -304,15 +357,19 @@ footer {
         .burguer-menu{
             display: none;
         }
+
         .descripcion {
             display: flex;
         }
-        .articulo2, .articulo3, .articulo4{
+        .articulo2, .articulo3, .articulo4, .articulo5, .articulo6, .articulo7, .articulo8{
             display: block;
             margin-bottom: 10px;
             transition: box-shadow 1s
-        
         }
+        .contenedorHijo{
+            text-align: center;
+        }
+
         main section article {
             box-shadow: 0px 0px 10px rgb(100, 100, 100);        
         }
@@ -320,5 +377,15 @@ footer {
             display:flex;
             flex-direction: row;
             justify-content: space-around;
+        }
+        footer {
+            margin-top: 50px;
+        }
+        footer div section {
+            width: 33%;
+        }
+        .sectionFooter{
+            text-align: left;
+            margin-top: 30px;
         }
 }
