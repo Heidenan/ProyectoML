@@ -1,102 +1,4 @@
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    
-}
-.header-one {
-    background-color: #EAC926;
-    text-align: center;
-    padding: 15px;
-  
-}
-.header-two {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-.cajasectionheader{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-
-
-picture {
-    width: 100%;
-    display: flex;
-    
-}
-.copy-header{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    font-size: 1rem;
-}
-.navbar1{
-    display: none
-}
-
-h2 {
-    display: block;
-}
-p{
-    margin-bottom: 20px;
-    color: black;
-}
-.headerGrow{
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
-    position: relative;
-    align-items: center;
-    
-}
-.icon{
-    display: flex;
-    width: 16px;
-    position: absolute;
-    padding-right: 25px;
-    z-index: 10;
-    
-}
-
-.logo {
-    width: 50%;
-    margin-right: 5px;
-}
-
-input {
-    width: 100%;
-    height: 2rem;
-    border-radius: 10px;
-}
-
-ul a {
-    list-style: none;
-    text-decoration: none;
-    color: black;
-}
-
-.burguer-menu {
-    background-color: #246ab4;
-    color: white;
-    display: block;
-    max-width: 35px;
-    border-radius: 4px;
-    margin: auto;
-    padding: 5px;
-}
-
-li {
-    list-style: none;
-}
-
-ul {
-    display: none;
-}
-
 /* ----- Body -----*/
 
 body { 
@@ -113,28 +15,6 @@ body {
     color: white;
 }
 
-
-/* ----- Footer -----*/
-footer {
-    
-    text-align: center;
-}
-
-.copyright{
-    margin-top:20px;
-    margin-bottom:10px
-}
-
-
-.iconosFooter {
-    color: #1259c3;;
-    font-size: 55px;
-    transform: transition 1.5s;
-}
-.iconosFooter:hover{
-    color: rgb(75, 164, 238);
-    transform: scale(1.1);
-}
 
 form {
     width: 50%;
@@ -159,7 +39,7 @@ form {
     flex-direction: column;
     border: none;
   }
-  section {
+  .loginForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,64 +80,7 @@ form {
 
         
     @media (min-width: 769px) {
-        h3 { 
-            display: block; 
-        } 
-        
-        .h2{
-            display: flex;
-            align-items: center;
-        }
-        .header-two{
-            display: flex;
-            flex-direction: row;
-            justify-content:space-between
-            
-        }
-
-        .headerGrow{
-            align-items: center;
-            width: 100%
-        }   
-        input {
-            display: flex;
-
-        }
-        
-        .logo {
-            width: 100%;
-            margin-right: 5px;
-        }
-        .navbar1 {
-            display: flex;
-            justify-content: space-between;
-        }
-        .navbar1 li {
-            margin: 0px 10px;
-        }
-        .cajasectionheader{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            width: 50%;
-        }
-        .copy-header{
-            display: flex;
-            justify-content: center;
-            padding-top: 20px;
-            width: 35%;
-            font-size: 1rem;
-            margin-top: 10px;
-        }
-        ul {
-            display: flex;
-        }
-        
-        .burguer-menu{
-            display: none;
-        }
        
-
 form {
     width: 50%;
     display: flex;
@@ -266,13 +89,7 @@ form {
   }
   
 
-  input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+
   }
   fieldset{
     padding: 16px;
@@ -281,17 +98,10 @@ form {
     flex-direction: column;
     border: none;
   }
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-  }
-
+  
   main {
       padding: 150px;
   }
   .botonEnviar{
       width: 21rem
   }
-}
